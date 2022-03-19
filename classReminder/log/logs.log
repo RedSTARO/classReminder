@@ -1,0 +1,8 @@
+[2022-03-19 12:50:47.004953][debug.py] Matched config.ini, in path D:\Documents\Coding\Python\DevelopmentFiles\dev\classReminder\config.ini
+[2022-03-19 12:51:08.328618][hitokoto.py] Matched hitokotoSentence:一个人的自身越是丰富，就越难以忍受世俗常规的安排。
+[2022-03-19 12:51:08.328618][hitokoto.py] Matched hitokotoFrom:人生的智慧
+[2022-03-19 12:51:08.329639][hitokoto.py] Total hitokoto dict:{'Sentence': '一个人的自身越是丰富，就越难以忍受世俗常规的安排。', 'From': '人生的智慧'}
+[2022-03-19 12:51:19.315404][debug.py] Matched config.ini, in path D:\Documents\Coding\Python\DevelopmentFiles\dev\classReminder\config.ini
+[2022-03-19 12:51:31.730482][hitokoto.py] Matched hitokotoSentence:君子不器。
+[2022-03-19 12:51:31.732431][hitokoto.py] Matched hitokotoFrom:论语·为政
+[2022-03-19 12:51:31.734431][hitokoto.py] Total hitokoto dict:{'Sentence': '君子不器。', 'From': '论语·为政'}
