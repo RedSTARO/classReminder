@@ -23,7 +23,7 @@ def log(str_, level = "info"):
                       			f"[{whichFun}] " + 
                       			str(str_) + 
 					"\n")
-	if logLevel = "dev":
+	elif logLevel = "dev":
 		whichFun = str(sys._getframe().f_back.f_code.co_filename).split("/")[-1].split("\\")[-1]
     		with open(path + "logs_dev.log", "a") as logFile:
         		logFile.write(f"[{str(datetime.datetime.now(timeZone).replace(tzinfo=None))}]" + 
