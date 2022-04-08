@@ -13,6 +13,7 @@ timeZone = pytz.timezone("Asia/Shanghai")
 path = conf.get("path", "log")
 
 def log(str_):
+    # TODO: Add log level
     print(str_)
     whichFun = str(sys._getframe().f_back.f_code.co_filename).split("/")[-1].split("\\")[-1]
     with open(path + "logs.log", "a") as logFile:
