@@ -22,27 +22,26 @@ def log(str_, level = "info"):
         		logFile.write(f"[{str(datetime.datetime.now(timeZone).replace(tzinfo=None))}]" + 
                       		f"[{whichFun}] " + 
                       		str(str_) + 
-						  	"\n")
+				"\n")
 	if logLevel = "dev":
 		whichFun = str(sys._getframe().f_back.f_code.co_filename).split("/")[-1].split("\\")[-1]
-    	if level = "info":
     		with open(path + "logs_info.log", "a") as logFile:
         		logFile.write(f"[{str(datetime.datetime.now(timeZone).replace(tzinfo=None))}]" + 
                       		f"[{whichFun}] " + 
                       		str(str_) + 
-						  	"\n")
+				"\n")
 		elif level = "error":
 			with open(path + "logs_error.log", "a") as logFile:
         		logFile.write(f"[{str(datetime.datetime.now(timeZone).replace(tzinfo=None))}]" + 
                       		f"[{whichFun}] " + 
                       		str(str_) + 
-						  	"\n")
+				"\n")
 		elif level = "warning":
 			with open(path + "logs_warning.log", "a") as logFile:
         		logFile.write(f"[{str(datetime.datetime.now(timeZone).replace(tzinfo=None))}]" + 
                       		f"[{whichFun}] " + 
                       		str(str_) + 
-						  	"\n")
+				"\n")
 
 log(f"Matched config.ini, in path {configPath}")
 
