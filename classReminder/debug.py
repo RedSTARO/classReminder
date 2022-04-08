@@ -16,30 +16,19 @@ path = conf.get("path", "log")
 def log(str_, level = "info"):
 #     print(str_)
 	if logLevel = "info":
-    	whichFun = str(sys._getframe().f_back.f_code.co_filename).split("/")[-1].split("\\")[-1]
-    	if level = "info":
-    		with open(path + "logs_info.log", "a") as logFile:
-        		logFile.write(f"[{str(datetime.datetime.now(timeZone).replace(tzinfo=None))}]" + 
-                      		f"[{whichFun}] " + 
-                      		str(str_) + 
-				"\n")
+    		whichFun = str(sys._getframe().f_back.f_code.co_filename).split("/")[-1].split("\\")[-1]
+    		if level = "info":
+    			with open(path + "logs_info.log", "a") as logFile:
+        			logFile.write(f"[{str(datetime.datetime.now(timeZone).replace(tzinfo=None))}]" + 
+                      			f"[{whichFun}] " + 
+                      			str(str_) + 
+					"\n")
 	if logLevel = "dev":
 		whichFun = str(sys._getframe().f_back.f_code.co_filename).split("/")[-1].split("\\")[-1]
-    		with open(path + "logs_info.log", "a") as logFile:
+    		with open(path + "logs_dev.log", "a") as logFile:
         		logFile.write(f"[{str(datetime.datetime.now(timeZone).replace(tzinfo=None))}]" + 
                       		f"[{whichFun}] " + 
-                      		str(str_) + 
-				"\n")
-		elif level = "error":
-			with open(path + "logs_error.log", "a") as logFile:
-        		logFile.write(f"[{str(datetime.datetime.now(timeZone).replace(tzinfo=None))}]" + 
-                      		f"[{whichFun}] " + 
-                      		str(str_) + 
-				"\n")
-		elif level = "warning":
-			with open(path + "logs_warning.log", "a") as logFile:
-        		logFile.write(f"[{str(datetime.datetime.now(timeZone).replace(tzinfo=None))}]" + 
-                      		f"[{whichFun}] " + 
+				str(level) + 
                       		str(str_) + 
 				"\n")
 
