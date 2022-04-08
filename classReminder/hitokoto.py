@@ -11,6 +11,7 @@ def hitokoto():
 
     hitokotoRes = requests.get(url, headers=headers).text
     hitokotoResDict = ast.literal_eval(hitokotoRes)
+    # TODO: Here is a bug will stop the whole progress.
     # log(hitokotoRes)
 
     hitokotoSentence = hitokotoResDict["hitokoto"]
